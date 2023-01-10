@@ -5,9 +5,8 @@ var fetch = require('cross-fetch');
 var title = 'Webapp mission test'
 // :user is used to actually collect the part of the url that the user can put in, this is usually used for product and user indexes, just to name a few things.
 router.get('/:user', function (req, res, next) {
-  var info = req.params
   console.log(req.params)
-      res.render('mission', {title: title, user: JSON.stringify(info.user)});
+      res.render('mission', {title: title, data:{user: req.params.user}});
   });
   
   

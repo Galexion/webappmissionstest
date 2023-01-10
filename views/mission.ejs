@@ -1,11 +1,11 @@
 <% var rootPath='../' ; %>
 <%- include(rootPath + 'templates/header.ejs' ); %>
   <div class="content">
-  <% console.log(user)
-  if(user = undefined) {%>
+  <%
+  if(data.user = undefined) {%>
   Hello, User.
   <% } else {%>
-  <p>Hello, <%= user %></p>
+  <p>Hello, <%= data.user %></p>
   <%}%>
   </div>
 <%- include(rootPath + 'templates/footer.ejs' )%>
