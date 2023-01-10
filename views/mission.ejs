@@ -2,7 +2,7 @@
 <%- include(rootPath + 'templates/header.ejs' ); %>
   <div class="content">
   <%
-  if(data.user = undefined) {%>
+  if(data.user === undefined) {%>
   Hello, User.
   <% } else {%>
   <p>Hello, <%= data.user %></p>
